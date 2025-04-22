@@ -3,7 +3,7 @@ getgenv().Dough = function()
     local chooses
     local foundServers = game:GetService('HttpService'):JSONDecode(game:HttpGet(url))
     for i,v in foundServers do 
-        if v.jobId ~= game.JobId then 
+        if v.JobId ~= game.JobId then 
             chooses = v
         end
     end
